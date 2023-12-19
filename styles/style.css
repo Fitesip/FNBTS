@@ -11,6 +11,7 @@ body {
     font-size: 24px;
     display: grid;
     min-height: 100vh;
+    max-width: 100%;
     grid-template-rows: auto 1fr auto;
     margin-right: calc(-1 * (100vw - 100%));
     overflow-x: hidden;
@@ -19,43 +20,44 @@ body {
 .header {
     background-color: rgba(33, 33, 33, 0.85);
     overflow: hidden;
-    font-size: 24px;
+    max-font-size: 24px;
     top: 0;
     width: 100%;
-    height: 8%;
-    position: fixed;
+    max-height: 15%;
+    position: absolute;
 }
 .header a {
     float: left;
     display: flex;
     color: #e7e7e7;
     text-align: center;
-    padding: 1% 0.6%;
+    padding: 1% 0.8%;
     text-decoration: none;
-    margin-top: 0.2%;
+    margin-top: 0.4%;
     margin-left: 1%;
-    margin-bottom: 0.2%;
-
+    overflow-y: auto;
 }
 .header a:hover {
     background-color: #232323;
     color: black;
 }
+.imgblocka {
+    float: right;
+    margin-right: 1%;
+    margin-top: -0.65%;
+    margin-bottom: 0.4%;
+    max-height: 84px;
+    max-width: 102px;
+}
 .hui {
     background-image: url(../imag/fnbts.png);
-    width: 5.5%;
-    height: 130%;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 14px;
-    margin-right: 1%;
-    margin-top: -0.65%;
     display: block;
     image-resolution: from-image;
-    float: right;
-    overflow-y: auto;
 }
 .footer {
     background-color: rgba(33, 33, 33, 0.85);
@@ -66,18 +68,18 @@ body {
     margin-top: 4%;
 }
 .pizda {
-    margin-top: 0.5%;
-    margin-left: 1%;
+    margin-top: 10px;
+    margin-left: 10px;
     font-size: 14px;
-    margin-bottom: 0.5%;
+    margin-bottom: 0.4%;
 }
 .textblock {
     padding: 2% 2% 2% 2%;
     display: block;
     background: rgba(33, 33, 33, 0.6);
-    margin-top: 8%;
+    margin-top: 12%;
     border: 2px solid #333333;
-    height: 59vh;
+    height: 65vh;
     float: left;
     margin-left: 8%;
     width: 70%;
@@ -92,7 +94,7 @@ body {
 .imgblock {
     padding: 0.4% 0.4% 0.4% 0.4%;
     background: rgba(33, 33, 33, 0.6);
-    margin-top: 8%;
+    margin-top: 12%;
     border: 2px solid #333333;
     width: 12%;
     margin-left: 1%;
