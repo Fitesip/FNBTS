@@ -506,7 +506,7 @@ html {
         font-size: 16px;
     }
 }
-@media screen and (max-width: 400px) and (max-height: 932px) {
+@media screen and (width: 393px) and (height: 852px) {
     .korobka {
         justify-content: center;
         flex-direction: column;
@@ -517,7 +517,7 @@ html {
 
     }
     .textblock {
-        max-height: 480px;
+        max-height: 400px;
         padding: 10px;
     }
     .imgblock {
