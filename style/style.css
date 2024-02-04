@@ -170,6 +170,20 @@ html {
 .textblock li {
     padding: 5px;
 }
+.ps li {
+    list-style-type: none; /* Убираем маркеры у списка */
+}
+.ps li:before {
+    content: "- "; /* Добавляем в качестве маркера символ */
+}
+.ps {
+    font-family: FNBTS;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    margin: 15px;
+}
 .footer {
     bottom: 0;
 }
