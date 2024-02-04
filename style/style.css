@@ -1,12 +1,12 @@
 @font-face {
-    font-family: Jura;
+    font-family: FNBTS;
     font-weight: 400;
-    src: url("../fonts/Jura/Jura-Regular.ttf");
+    src: url("../fonts/FNBTS/FNBTS.ttf");
 }
 @font-face {
-    font-family: Jura;
+    font-family: FNBTS;
     font-weight: 600;
-    src: url("../fonts/Jura/Jura-SemiBold.ttf");
+    src: url("../fonts/FNBTS/FNBTS.ttf");
 }
 html {
     background-image: url("../images/background.png");
@@ -41,7 +41,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 30px;
 }
 .logo {
     display: flex;
@@ -49,45 +49,45 @@ html {
 .logo img {
     max-width: 85px;
     max-height: 85px;
-    padding-right: 25px;
+    padding-right: 20px;
 }
 .buttons {
     display: flex;
-    padding-left: 25px;
-    gap: 25px;
+    padding-left: 20px;
+    gap: 20px;
 }
 .button {
     color: #FFF;
     text-align: center;
-    font-family: Jura;
-    font-size: 24px;
+    font-family: FNBTS;
+    font-size: 28px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    text-decoration-line: underline;
+    text-decoration-line: none;
 }
 .korobka {
     display: flex;
 }
 .block {
     padding-top: 70px;
-    /*padding-bottom: 65px;*/
+    padding-bottom: 70px;
     display: block;
 }
 .textblock {
     display: flex;
     flex-direction: column;
     max-width: 1440px;
-    height: 590px;
     border: 2px solid #333;
     background: rgba(51, 51, 51, 0.60);
     padding: 20px;
     overflow-y: auto;
-    border-radius: 15px;
+    border-radius: 30px;
     overflow-style: marquee-block;
 }
+
 .textblock p {
-    font-family: Jura;
+    font-family: FNBTS;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -102,7 +102,7 @@ html {
     border: 2px solid #333;
     margin-left: 50px;
     display: flex;
-    border-radius: 15px;
+    border-radius: 30px;
     padding: 15px;
     overflow: hidden;
 }
@@ -110,12 +110,23 @@ html {
     width: 250px;
     height: 250px;
 }
+.seredina {
+    text-align: center;
+    font-family: FNBTS;
+    font-size: 48px !important;
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+}
 .wrapper {
     width: 100%;
     display: flex;
     animation: slide 20s infinite running;
     animation-delay: 1s;
     animation-timing-function: revert;
+}
+.prosto {
+    text-decoration: none;
 }
 @keyframes slide{
     0%{
@@ -137,25 +148,19 @@ html {
         transform: translateX(0%);
     }
 }
-.seredina {
-    text-align: center;
-    font-family: Jura;
-    font-size: 32px;
-    font-weight: 600;
-    font-style: normal;
-    color: #fff;
-}
+
 .textblock h1 {
     text-align: center;
-    font-family: Jura;
-    font-size: 32px;
+    font-family: FNBTS;
+    font-size: 40px;
     font-weight: 600;
     font-style: normal;
     color: #fff;
 }
+
 .textblock ol {
     text-align: left;
-    font-family: Jura;
+    font-family: FNBTS;
     font-size: 24px;
     font-weight: 400;
     font-style: normal;
@@ -166,52 +171,52 @@ html {
     padding: 5px;
 }
 .footer {
-    position: absolute;
     bottom: 0;
-    padding-bottom: 10px;
-    padding-top: 25px;
-    left: 0;
-    width: 100%
 }
 .footer__inner {
     background: rgba(51, 51, 51, 0.75);
     border: 2px solid #333;
     max-height: 85px;
-    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 30px;
+    width: 100%;
 }
 
 .fottext {
-    font-family: Jura;
+    font-family: FNBTS;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     color: #fff;
-    margin: 5px;
+    margin: 20px;
 }
-.prosto {
-    font-family: Jura;
-    font-size: 16px;
+.prosto a {
+    border: none;
+    overflow: visible;
+    font-family: FNBTS;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    color: #fff;
     margin: 5px;
+    background-image: radial-gradient(#DD6060FF 45%, #5A1D1FFF);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 .sogl {
     padding-top: 70px;
 }
 .enableknopka {
-    font-family: Jura;
+    font-family: FNBTS;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     color: #fff;
+
 }
 #enableknopka:not(:checked) ~ #knopka{
     user-select:none!important;
@@ -229,22 +234,44 @@ html {
     display: block;
     bottom: 0;
     margin: 25px auto;
-    font-size: 24px;
+    font-size: 32px;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px 0 #000000;
     outline: 0;
     cursor: pointer;
     background: #333333;
-    color: #e7e7e7;
+    color: #fff;
+    font-family: FNBTS;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 .uslovia {
     color: #8d8d91;
+    text-decoration: none;
 }
 .enableknopka {
     margin-top: 20px;
 }
 
-
+.button {
+    transition: 0.2s;
+}
+.button:hover {
+    transform: scale(1.1);
+}
+.button1 {
+    transition: 0.2s;
+}
+.button1:hover {
+    transform: scale(1.1);
+}
+.logo {
+    transition: 0.2s;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
 
 @media screen and (min-width: 1000px) and (max-width: 1599px) and (max-height: 1400px) {
     .korobka {
